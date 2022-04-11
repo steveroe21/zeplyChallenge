@@ -1,0 +1,15 @@
+{% extends "base.html" %} 
+
+{% block main_content %} 
+
+    <form action="" method="POST" >
+        <label for="BTC">BTC: </label>
+        <input type="checkbox" name="BTC" id="BTC" value="{{ BTC }}" />
+        <br />
+        <label for="ETH">ETH: </label>
+        <input type="checkbox" name="ETH" id="ETH" value="{{ ETH }}" />
+        <br />
+        <input type="submit" />
+    </form>
+
+    {% endblock %}

@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block main_content %}
+
+    <h1>List of all addresses generated. </h1>
+    <table>
+        {% for BTC_addresses in BTC_addresses %}
+        <tr>
+            <td>{{ BTC_addresses["BTC_address"] }}</td>
+            <td>{{ BTC_addresses["BTC_id"] }}</td>
+        </tr>
+    </table>
+    <table>
+        {% for ETH_addresses in ETH_addresses %}
+        <tr>
+            <td>{{ ETH_addresses["ETH_address"] }}</td>
+            <td>{{ ETH_addresses["ETH_id"] }}</td>
+        </tr>
+    </table>
+
+{% endblock %}
