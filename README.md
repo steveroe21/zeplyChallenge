@@ -4,3 +4,4 @@ I started with an app.py file with a basic app route that takes you to the home 
 When you press submit your address is created and you are redirected to the page whenre you retrieve your address and Id, "retrieve.html". With your new id, you can use "list.html" to see if this id is linked to any other wallet you have created. 
 When submit is hit in the cryptoChoice.html page, the address and ID are stored in the appropriate database. 
 When list is executed, all previously made addresses appear.
+The app routes are as follows: "/" , "cryptoChoice.html", "retrieve.html", "list.html"
