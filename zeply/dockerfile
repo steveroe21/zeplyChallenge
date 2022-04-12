@@ -1,0 +1,16 @@
+# Building Angular Application
+FROM zeply as builder
+
+COPY app.py /app.py
+
+WORKDIR /app.py
+
+RUN $(npm bin)/ng build
+
+# Run nginx to serve application
+
+FROM nginx
+
+COPY -- from=builder /app.py/dist/* / usr/share/nginx/html/ 
+
+EXPOSE 80
