@@ -2,22 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <title>{% block title %}{% endblock %}</title>
-    <link rel="stylesheet" src="/styles.css" />
+    <title>Generate Crypto Wallet</title>
 </head>
         <body>
             {% block main_content %}{% endblock %}
-
-            {% if g.user %}
-                <p>User Id: {{ g.user }}</p>
-                <p><a href="{{ url_for('logout') }}">Logout</a></p>
-            {% else %}
-                <p><a href="{{ url_for('register') }}">Register</a></p>
-                <p><a href="{{ url_for('login') }}">Login</a></p>
-            {% endif %}
-            <p>
-                <a href="{{ url_for('index') }}">Homepage</a>
-            </p>
+            
+            <p><a href="{{ url_for('generateAddress') }}">Generate Address</a></p>
+            <p><a href="{{ url_for('retrieve') }}">Retrieve</a></p>
+            <p><a href="{{ url_for('list') }}">List</a></p>
+            
             <footer>
                 <small>© CorkCoding, 2022. All rights reserved.</small>
             </footer>
