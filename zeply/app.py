@@ -21,7 +21,6 @@ def close_db_at_end_of_request(e=None):
     close_db(e)
 
 
-
 def generateAddress():
     wallet = Wallet(testnet= True)
     return wallet
