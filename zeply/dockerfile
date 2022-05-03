@@ -11,6 +11,6 @@ RUN $(npm bin)/ng build
 
 FROM nginx
 
-COPY -- from=builder /app.py/dist/* / usr/share/nginx/html/ 
+COPY - from=builder /app.py/dist/* / usr/share/nginx/html/ 
 
 EXPOSE 80
