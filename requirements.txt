@@ -1,0 +1,1 @@
+I have been running the file in the terminal of the app.py file using "python -m run flask". 
